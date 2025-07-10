@@ -1,0 +1,43 @@
+.footer {
+  background-color: #56b6bc; 
+  color: #084047;
+  padding: 16px 10px 10px;
+  text-align: center; 
+  margin-top: auto;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 15px;
+}
+
+.footer-nombre {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer-redes {
+  margin-bottom: 10px;
+}
+
+.footer-redes a {
+  color: #084047;
+  font-size: 24px;
+  margin: 0 12px;
+  transition: transform 0.3s ease;
+}
+
+.footer-redes a:hover {
+  transform: scale(1.2);
+  color: #331dd4;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #084047;
+}
+
+

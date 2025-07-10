@@ -1,0 +1,104 @@
+:root {
+  --fondo-principal: #c4f3ee;
+  --texto-principal: #111;
+  --color-principal: #66ced6;
+  --color-secundario: #6d8a96;
+  --color-blanco: #ffffff;
+  --color-gris: #f0f0f0;
+  --color-azul: #00bfff;
+  --color-texto-activo: #5d707f;
+  --color-globito: #f39c12;
+
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #e4fafd;
+  overflow: auto;
+  scrollbar-width: none; 
+}
+
+body::-webkit-scrollbar {
+  display: none; 
+}
+.carousel-inner img {
+  max-height: 450px;
+  object-fit: cover;
+}
+.carousel-indicators button {
+  background-color: #444 !important;
+  opacity: 0.6;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #00aaff !important;
+  opacity: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; 
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.4); 
+  border-radius: 50%;
+  padding: 12px;
+}
+
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+.carousel-container {
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+
