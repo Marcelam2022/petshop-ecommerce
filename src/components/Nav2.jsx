@@ -6,7 +6,7 @@ import { CarritoContext } from "../contexts/CarritoContext";
 import { useBusquedaContext } from "../contexts/BusquedaContext";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase/firebaseConfig";
-import "../styles/Nav.css";
+import "../Styles/Nav.css";
 
 function Nav2() {
   const navigate = useNavigate();
