@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import { CarritoContext } from "../contexts/CarritoContext";
 import CarritoCard from "./CarritoCard";
-import "../styles/Carrito.css";
+import "../Styles/Carrito.css";
 import { toast, ToastContainer } from "react-toastify";
 import Swal from "sweetalert2";
 

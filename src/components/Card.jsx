@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/Productos.css";
+import "../Styles/Productos.css";
 
 function Card({ producto }) {
   const nombre = producto.nombre || producto.name;

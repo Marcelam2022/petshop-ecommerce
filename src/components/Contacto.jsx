@@ -3,7 +3,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from "../firebase/firebaseConfig";
 import Swal from "sweetalert2";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/Contacto.css";
+import "../Styles/Contacto.css";
 
 function Contacto() {
   useEffect(() => {

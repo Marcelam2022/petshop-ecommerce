@@ -2,7 +2,7 @@ import { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../contexts/AuthContext";
 import Swal from "sweetalert2";
-import "../styles/Login.css";
+import "../Styles/Login.css";
 
 function Login2() {
   const [email, setEmail] = useState("");

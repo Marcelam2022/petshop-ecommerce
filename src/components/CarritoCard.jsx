@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { CarritoContext } from "../contexts/CarritoContext";
-import "../styles/CarritoCard.css";
+import "../Styles/CarritoCard.css";
 
 function CarritoCard({ producto }) {
   const { actualizarCantidad, borrarProductoCarrito } = useContext(CarritoContext);

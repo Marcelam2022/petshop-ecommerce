@@ -12,7 +12,7 @@ import {
 } from "firebase/firestore";
 import { dispararSweetBasico } from "../helpers/sweetAlert";
 import Swal from "sweetalert2";
-import "../styles/Custom.css";
+import "../Styles/Custom.css";
 
 function FormularioProducto() {
   const [name, setName] = useState("");
