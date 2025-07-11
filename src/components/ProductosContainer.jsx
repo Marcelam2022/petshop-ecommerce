@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from "react";
-import "../styles/Productos.css";
+import "../Styles/Productos.css";
 import Card from "./Card";
 import { CarritoContext } from "../contexts/CarritoContext";
 import { collection, getDocs } from "firebase/firestore";
