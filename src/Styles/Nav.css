@@ -140,7 +140,7 @@
 
 .buscador-input {
   width: 100%;
-  padding: 10px 40px 10px 12px;
+  padding: 10px 50px 10px 12px;
   border-radius: 8px;
   border: 2px solid var(--color-principal);
   font-size: 14px;
@@ -164,7 +164,7 @@
 
 .icono-clear {
   position: absolute;
-  right: 40px;
+  right: 35px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 18px;
@@ -315,4 +315,61 @@
   .buscador-desktop {
     display: none !important;
   }
+}  
+
+@media (max-width: 768px) {
+  .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .buscador-form.buscador-mobile {
+    order: 1;
+    flex-grow: 1;
+    max-width: 75%;
+    margin-right: 10px;
+    margin-top: 0;
+  }
+
+  .navbar-toggler {
+    order: 2;
+    margin-left: auto;
+    z-index: 1001;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    background-color: var(--color-principal);
+    z-index: 999;
+  }
 }
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 480px) {
+  .navbar-brand img {
+    height: 55px;
+  }
+}
+
+@media (max-width: 480px) {
+  .buscador-form.buscador-mobile {
+    max-width: 200px;
+  }
+}
+

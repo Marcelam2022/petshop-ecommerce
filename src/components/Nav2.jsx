@@ -7,6 +7,8 @@ import { useBusquedaContext } from "../contexts/BusquedaContext";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "../firebase/firebaseConfig";
 import "../Styles/Nav.css";
+import { FaBars } from "react-icons/fa";
+
 
 function Nav2() {
   const navigate = useNavigate();
@@ -65,7 +67,7 @@ function Nav2() {
 
   return (
     <nav className="navbar navbar-expand-md">
-      <div className="container-fluid d-flex justify-content-between align-items-center">
+<div className="container-fluid d-flex align-items-center justify-content-between flex-nowrap">
         
         <NavLink to="/" className="navbar-brand" onClick={cerrarMenu}>
           <img src="/logo.png" alt="Logo PetShop" />
@@ -102,18 +104,16 @@ function Nav2() {
             </ul>
           )}
         </form>
-
-        
+ 
         <button
-          className="navbar-toggler"
-          type="button"
-          onClick={() => setMenuAbierto(!menuAbierto)}
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+  className="navbar-toggler"
+  type="button"
+  onClick={() => setMenuAbierto(!menuAbierto)}
+>
+ <FaBars size={24} color="#fff" />
+</button>
 
-        
-        <div className={`collapse navbar-collapse ${menuAbierto ? "show" : ""}`}>
+       <div className={`collapse navbar-collapse ${menuAbierto ? "show" : ""}`}>
           <ul className="navbar-nav me-auto mb-2 mb-md-0 nav-list">
             {["/", "/productos", "/contacto", "/nosotros"].map((path, i) => (
               <li className="nav-item" key={i}>
@@ -207,4 +207,4 @@ function Nav2() {
   );
 }
 
-export default Nav2;
+export default Nav2; 
